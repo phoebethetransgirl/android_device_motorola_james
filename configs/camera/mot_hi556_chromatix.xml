@@ -1,5 +1,5 @@
 <!--
-  Copyright (c) 2017 Qualcomm Technologies, Inc.
+  Copyright (c) 2016 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -62,7 +62,7 @@ Order of Resolution Pick:
        valid chroamtix file name or else NULL is returned.
    1) From ResolutionChromatixInfo node for which sensor_resolution_index
        is "r" and special_mode_mask is "s".
-
+   2) From CommonChromatixInfo node for which special_mode_mask is "s".
    3) From ResolutionChromatixInfo node for which sensor_resolution_index
        is "r" and special_mode_mask is "0".
    4) From CommonChromatixInfo node for which special_mode_mask is "0".
@@ -78,35 +78,34 @@ special_mode_mask values:
 
 <ChromatixConfigurationRoot>
   <CommonChromatixInfo>
-    <ChromatixName special_mode_mask="0">
-      <ISPCommon>ov12a10_common</ISPCommon>
-      <PostProc>ov12a10_postproc</PostProc>
+    <ChromatixName>
+      <ISPCommon>mot_hi556_common</ISPCommon>
+      <PostProc>mot_hi556_postproc</PostProc>
     </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
-    <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
-      <ISPPreview>ov12a10_preview</ISPPreview>
-      <ISPSnapshot>ov12a10_snapshot</ISPSnapshot>
-      <ISPVideo>ov12a10_default_video</ISPVideo>
-      <CPPPreview>ov12a10_cpp_preview</CPPPreview>
-      <CPPSnapshot>ov12a10_cpp_snapshot</CPPSnapshot>
-      <CPPVideo>ov12a10_cpp_video</CPPVideo>
-      <CPPLiveshot>ov12a10_cpp_liveshot</CPPLiveshot>
-      <A3Preview>ov12a10_zsl_preview_3a</A3Preview>
-      <A3Video>ov12a10_zsl_video_3a</A3Video>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>mot_hi556_preview</ISPPreview>
+      <ISPSnapshot>mot_hi556_snapshot</ISPSnapshot>
+      <ISPVideo>mot_hi556_default_video</ISPVideo>
+      <CPPPreview>mot_hi556_cpp_preview</CPPPreview>
+      <CPPSnapshot>mot_hi556_cpp_snapshot</CPPSnapshot>
+      <CPPVideo>mot_hi556_cpp_video</CPPVideo>
+      <CPPLiveshot>mot_hi556_cpp_liveshot</CPPLiveshot>
+      <A3Preview>mot_hi556_zsl_preview_3a</A3Preview>
+      <A3Video>mot_hi556_zsl_video_3a</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
-      <ISPPreview>ov12a10_hfr_120</ISPPreview>
-      <ISPSnapshot>ov12a10_hfr_120</ISPSnapshot>
-      <ISPVideo>ov12a10_hfr_120</ISPVideo>
-      <CPPPreview>ov12a10_cpp_hfr_120</CPPPreview>
-      <CPPSnapshot>ov12a10_cpp_hfr_120</CPPSnapshot>
-      <CPPVideo>ov12a10_cpp_hfr_120</CPPVideo>
-      <CPPLiveshot>ov12a10_cpp_hfr_120</CPPLiveshot>
-      <A3Preview>ov12a10_hfr_120_3a</A3Preview>
-      <A3Video>ov12a10_hfr_120_3a</A3Video>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>mot_hi556_hfr_120</ISPPreview>
+      <ISPSnapshot>mot_hi556_hfr_120</ISPSnapshot>
+      <ISPVideo>mot_hi556_hfr_120</ISPVideo>
+      <CPPPreview>mot_hi556_cpp_hfr_120</CPPPreview>
+      <CPPSnapshot>mot_hi556_cpp_hfr_120</CPPSnapshot>
+      <CPPVideo>mot_hi556_cpp_hfr_120</CPPVideo>
+      <CPPLiveshot>mot_hi556_cpp_hfr_120</CPPLiveshot>
+      <A3Preview>mot_hi556_hfr_120_3a</A3Preview>
+      <A3Video>mot_hi556_hfr_120_3a</A3Video>
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>
-
 
