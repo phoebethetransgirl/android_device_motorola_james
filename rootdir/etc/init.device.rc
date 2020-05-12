@@ -1,12 +1,13 @@
 on init
     # Set Hardware properties
     setprop ro.hardware.sensors james
+    setprop ro.hw.imager 8MP
 
     # Variant properties
 on property:ro.boot.hardware.sku=XT1921-3
     setprop ro.opengles.version 196608
     setprop ro.product.model XT1921-3
-    setprop ro.product.name james
+    setprop ro.product.name james_t
     setprop dalvik.vm.dex2oat-threads 2
     setprop persist.vendor.audio.fluence.speaker false
     setprop ro.hw.ecompass false
@@ -16,39 +17,7 @@ on property:ro.boot.hardware.sku=XT1921-3
     setprop ro.vendor.sensors.laccel false
     setprop ro.vendor.sensors.amd false
     setprop debug.hwui.use_buffer_age false
-
-on boot
-
-   # Change ownership and permission for laser_sensor
-   chown system system /sys/kernel/range/enable_sar
-   chmod 0660 /sys/kernel/range/enable_sar
-   chown system system /sys/kernel/range/set_delay_ms
-   chmod 0660 /sys/kernel/range/set_delay_ms
-   chown system system /sys/kernel/range/near
-   chmod 0660 /sys/kernel/range/near
-   chown system system /sys/class/input/input7/enable_ps_sensor
-   chmod 0660 /sys/class/input/input7/enable_ps_sensor
-   chown system system /sys/class/input/input7/set_delay_ms
-   chmod 0660 /sys/class/input/input7/set_delay_ms
-   chown system system /sys/class/input/input7/xtalk
-   chmod 0660 /sys/class/input/input7/xtalk
-   chown system system /sys/class/input/input7/do_flush
-   chmod 0660 /sys/class/input/input7/do_flush
-   chown system system /sys/class/input/input7/offset
-   chmod 0660 /sys/class/input/input7/offset
-
-service mmi-laser-sh /vendor/bin/init.mmi.laser.sh
-    class core
-    user root
-    oneshot
-
-service vendor.sensors.qti /vendor/bin/sensors.qti
-    class core
-    user system
-    group system
-    disabled
-
-service sensor-sh /vendor/bin/init.qcom.sensors.sh
-    class core
-    user root
-    oneshot
+    setprop persist.radio.customer_mbns tmo_usa_ims_default.mbn
+    setprop persist.vendor.ims.playout_delay 10
+    setprop persist.vendor.ims.cam_sensor_delay 20
+    setprop persist.vendor.ims.display_delay 40
