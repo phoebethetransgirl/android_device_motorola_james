@@ -31,6 +31,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/mot_hi846_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_hi846_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/msm8917_mot_james_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_mot_james_camera.xml
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/unavail.android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.fingerprint.xml \
+    $(LOCAL_PATH)/configs/permissions/unavail.android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.gyroscope.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
