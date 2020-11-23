@@ -89,7 +89,6 @@ LensInfo : Information of the lens present in the module.
   <CameraModuleConfig>
     <CameraId>0</CameraId>
     <SensorName>mot_hi846</SensorName>
-    <EepromName>mot_hi846</EepromName>
     <ActuatorName>dw9714p</ActuatorName>
     <FlashName>pmic</FlashName>
     <ChromatixName>mot_hi846_chromatix</ChromatixName>
@@ -115,7 +114,6 @@ LensInfo : Information of the lens present in the module.
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>mot_hi556</SensorName>
-    <EepromName>mot_hi556</EepromName>
     <FlashName>pmic</FlashName>
     <ChromatixName>mot_hi556_chromatix</ChromatixName>
     <AltChromatixName>mot_hi556_byd_chromatix</AltChromatixName>

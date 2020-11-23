@@ -11,11 +11,7 @@ vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Camera
-lib/libdualcameraddm.so
-lib/libjni_dualcamera.so
-lib/libqvrcamera_client.so
 vendor/lib/libchromaflash.so
-vendor/lib/libgralloc1.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -27,78 +23,82 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib/libS5k2l7Pdaf.so
-vendor/lib/libS5k2l7PdafCamif.so
-vendor/lib/libSonyDefocus.so
-vendor/lib/libSonyDualPDLibrary.so
-vendor/lib/libSonyDualPDParam.so
 vendor/lib/libtrueportrait.so
 -vendor/lib/libts_detected_face_hal.so
 -vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
 
+# Camera - from deen_sprout - QPKS30.54-22-13
+vendor/lib/libgralloc1.so|e252ee931aaf448d4b0773cde7894fc38af23b4f
+
+# Camera actuators - from deen_sprout - PPKS29.68-16-36-14
+vendor/lib/libactuator_dw9714p.so:vendor/lib/libactuator_dw9714p_truly.so|66d55c5778eb538bc9c1d02ca9349162373df7a7
+
 # Camera chromatix
-vendor/lib/libchromatix_mot_s5k4h7_common.so
-vendor/lib/libchromatix_mot_s5k4h7_cpp_hfr_120.so
-vendor/lib/libchromatix_mot_s5k4h7_cpp_liveshot.so
-vendor/lib/libchromatix_mot_s5k4h7_cpp_preview.so
-vendor/lib/libchromatix_mot_s5k4h7_cpp_snapshot.so
-vendor/lib/libchromatix_mot_s5k4h7_cpp_video_full.so
-vendor/lib/libchromatix_mot_s5k4h7_hfr_120.so
-vendor/lib/libchromatix_mot_s5k4h7_hfr_120_3a.so
-vendor/lib/libchromatix_mot_s5k4h7_postproc.so
-vendor/lib/libchromatix_mot_s5k4h7_snapshot.so
-vendor/lib/libchromatix_mot_s5k4h7_video_full.so
-vendor/lib/libchromatix_mot_s5k4h7_zsl_preview_3a.so
-vendor/lib/libchromatix_mot_s5k4h7_zsl_video_3a.so
-vendor/lib/libchromatix_ov12a10_common.so
-vendor/lib/libchromatix_ov12a10_cpp_hfr_120.so
-vendor/lib/libchromatix_ov12a10_cpp_liveshot.so
-vendor/lib/libchromatix_ov12a10_cpp_preview.so
-vendor/lib/libchromatix_ov12a10_cpp_snapshot.so
-vendor/lib/libchromatix_ov12a10_cpp_video.so
-vendor/lib/libchromatix_ov12a10_default_video.so
-vendor/lib/libchromatix_ov12a10_hfr_120.so
-vendor/lib/libchromatix_ov12a10_hfr_120_3a.so
-vendor/lib/libchromatix_ov12a10_postproc.so
-vendor/lib/libchromatix_ov12a10_preview.so
-vendor/lib/libchromatix_ov12a10_snapshot.so
-vendor/lib/libchromatix_ov12a10_zsl_preview_3a.so
-vendor/lib/libchromatix_ov12a10_zsl_video_3a.so
-vendor/lib/libchromatix_ov5675_jeterht_common.so
-vendor/lib/libchromatix_ov5675_jeterht_cpp_hfr_120.so
-vendor/lib/libchromatix_ov5675_jeterht_cpp_liveshot.so
-vendor/lib/libchromatix_ov5675_jeterht_cpp_preview.so
-vendor/lib/libchromatix_ov5675_jeterht_cpp_snapshot.so
-vendor/lib/libchromatix_ov5675_jeterht_cpp_video.so
-vendor/lib/libchromatix_ov5675_jeterht_hfr_120.so
-vendor/lib/libchromatix_ov5675_jeterht_hfr_120_3a.so
-vendor/lib/libchromatix_ov5675_jeterht_postproc.so
-vendor/lib/libchromatix_ov5675_jeterht_snapshot.so
-vendor/lib/libchromatix_ov5675_jeterht_zsl_preview_3a.so
-vendor/lib/libchromatix_ov5675_jeterht_zsl_video_3a.so
-vendor/lib/libchromatix_ov5675_jeterkc_common.so
-vendor/lib/libchromatix_ov5675_jeterkc_cpp_hfr_120.so
-vendor/lib/libchromatix_ov5675_jeterkc_cpp_liveshot.so
-vendor/lib/libchromatix_ov5675_jeterkc_cpp_preview.so
-vendor/lib/libchromatix_ov5675_jeterkc_cpp_snapshot.so
-vendor/lib/libchromatix_ov5675_jeterkc_cpp_video.so
-vendor/lib/libchromatix_ov5675_jeterkc_hfr_120.so
-vendor/lib/libchromatix_ov5675_jeterkc_hfr_120_3a.so
-vendor/lib/libchromatix_ov5675_jeterkc_postproc.so
-vendor/lib/libchromatix_ov5675_jeterkc_snapshot.so
-vendor/lib/libchromatix_ov5675_jeterkc_zsl_preview_3a.so
-vendor/lib/libchromatix_ov5675_jeterkc_zsl_video_3a.so
+vendor/lib/libchromatix_mot_hi556_byd_common.so
+vendor/lib/libchromatix_mot_hi556_byd_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_hi556_byd_cpp_liveshot.so
+vendor/lib/libchromatix_mot_hi556_byd_cpp_preview.so
+vendor/lib/libchromatix_mot_hi556_byd_cpp_snapshot.so
+vendor/lib/libchromatix_mot_hi556_byd_cpp_video.so
+vendor/lib/libchromatix_mot_hi556_byd_default_video.so
+vendor/lib/libchromatix_mot_hi556_byd_hfr_120.so
+vendor/lib/libchromatix_mot_hi556_byd_hfr_120_3a.so
+vendor/lib/libchromatix_mot_hi556_byd_postproc.so
+vendor/lib/libchromatix_mot_hi556_byd_preview.so
+vendor/lib/libchromatix_mot_hi556_byd_snapshot.so
+vendor/lib/libchromatix_mot_hi556_byd_zsl_preview_3a.so
+vendor/lib/libchromatix_mot_hi556_byd_zsl_video_3a.so
+vendor/lib/libchromatix_mot_hi556_common.so
+vendor/lib/libchromatix_mot_hi556_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_hi556_cpp_liveshot.so
+vendor/lib/libchromatix_mot_hi556_cpp_preview.so
+vendor/lib/libchromatix_mot_hi556_cpp_snapshot.so
+vendor/lib/libchromatix_mot_hi556_cpp_video.so
+vendor/lib/libchromatix_mot_hi556_default_video.so
+vendor/lib/libchromatix_mot_hi556_hfr_120.so
+vendor/lib/libchromatix_mot_hi556_hfr_120_3a.so
+vendor/lib/libchromatix_mot_hi556_postproc.so
+vendor/lib/libchromatix_mot_hi556_preview.so
+vendor/lib/libchromatix_mot_hi556_snapshot.so
+vendor/lib/libchromatix_mot_hi556_zsl_preview_3a.so
+vendor/lib/libchromatix_mot_hi556_zsl_video_3a.so
+vendor/lib/libchromatix_mot_hi846_byd_common.so
+vendor/lib/libchromatix_mot_hi846_byd_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_hi846_byd_cpp_liveshot.so
+vendor/lib/libchromatix_mot_hi846_byd_cpp_preview.so
+vendor/lib/libchromatix_mot_hi846_byd_cpp_snapshot.so
+vendor/lib/libchromatix_mot_hi846_byd_cpp_video.so
+vendor/lib/libchromatix_mot_hi846_byd_default_video.so
+vendor/lib/libchromatix_mot_hi846_byd_hfr_120.so
+vendor/lib/libchromatix_mot_hi846_byd_hfr_120_3a.so
+vendor/lib/libchromatix_mot_hi846_byd_postproc.so
+vendor/lib/libchromatix_mot_hi846_byd_preview.so
+vendor/lib/libchromatix_mot_hi846_byd_snapshot.so
+vendor/lib/libchromatix_mot_hi846_byd_zsl_preview_3a.so
+vendor/lib/libchromatix_mot_hi846_byd_zsl_video_3a.so
+vendor/lib/libchromatix_mot_hi846_common.so
+vendor/lib/libchromatix_mot_hi846_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_hi846_cpp_liveshot.so
+vendor/lib/libchromatix_mot_hi846_cpp_preview.so
+vendor/lib/libchromatix_mot_hi846_cpp_snapshot.so
+vendor/lib/libchromatix_mot_hi846_cpp_video.so
+vendor/lib/libchromatix_mot_hi846_default_video.so
+vendor/lib/libchromatix_mot_hi846_hfr_120.so
+vendor/lib/libchromatix_mot_hi846_hfr_120_3a.so
+vendor/lib/libchromatix_mot_hi846_postproc.so
+vendor/lib/libchromatix_mot_hi846_preview.so
+vendor/lib/libchromatix_mot_hi846_snapshot.so
+vendor/lib/libchromatix_mot_hi846_zsl_preview_3a.so
+vendor/lib/libchromatix_mot_hi846_zsl_video_3a.so
 
 # Camera sensors
-vendor/lib/libmmcamera_mot_ov12a10.so
-vendor/lib/libmmcamera_mot_ov5675.so
-vendor/lib/libmmcamera_s5k4h7.so
+vendor/lib/libmmcamera_mot_hi556.so
+vendor/lib/libmmcamera_mot_hi846.so
 
 # Display calibration
-vendor/etc/qdcm_calib_data_mipi_mot_video_djn_hd_599.xml|315c54a3967e053782571d6adb08f01048675dc2
-vendor/etc/qdcm_calib_data_mipi_mot_video_djn_hd_600.xml|689a49022d016326cc3fa875bbde2392b61290d3
-vendor/etc/qdcm_calib_data_mipi_mot_video_tianma_hd_599.xml|315c54a3967e053782571d6adb08f01048675dc2
+vendor/etc/qdcm_calib_data_mipi_mot_video_djn_720p_520.xml
+vendor/etc/qdcm_calib_data_mipi_mot_video_txd_720p_520.xml
 
 # Fingerprint - from deen_sprout - QPKS30.54-22-12
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets|bc775f7e2e9afa615d7b90d9076b0e82a885a917
@@ -135,6 +135,3 @@ vendor/lib64/sensor_calibrate.so|47f475a83d6eb59f45a810299116893c91acf79e
 vendor/lib64/sensors.rp.so|c792a29071b6e8521e205b0d0e87a96401407618
 vendor/lib64/sensors.ssc.so|761d2b907b60176a8ef77e7f9296337b936a5351
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|4ca1d6dbe9acfbc762234b622ab2e7fa3328275d
-
-# Sensors (laser)
-vendor/lib/sensors.hal.tof.so
