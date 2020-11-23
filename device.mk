@@ -42,6 +42,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-egis.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-egis.idc
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/unavail.android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.fingerprint.xml \
+    $(LOCAL_PATH)/configs/permissions/unavail.android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.gyroscope.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
