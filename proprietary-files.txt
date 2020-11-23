@@ -31,8 +31,8 @@ vendor/lib/libubifocus.so
 # Camera - from deen_sprout - QPKS30.54-22-13
 vendor/lib/libgralloc1.so|e252ee931aaf448d4b0773cde7894fc38af23b4f
 
-# Camera actuators - from deen_sprout - PPKS29.68-16-36-14
-vendor/lib/libactuator_dw9714p.so:vendor/lib/libactuator_dw9714p_truly.so|66d55c5778eb538bc9c1d02ca9349162373df7a7
+# Camera actuators - from deen_sprout - QPKS30.54-22-4
+vendor/lib/libactuator_dw9714p.so:vendor/lib/libactuator_dw9714p_truly.so|f2f7348bc6903c890ddba8dde4a2b13bada5ef31
 
 # Camera chromatix
 vendor/lib/libchromatix_mot_hi556_byd_common.so
