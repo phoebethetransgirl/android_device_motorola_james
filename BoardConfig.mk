@@ -10,7 +10,7 @@
 DEVICE_PATH := device/motorola/james
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := james
+TARGET_OTA_ASSERT_DEVICE := james,rjames
 
 # Display
 TARGET_SCREEN_DENSITY := 320
