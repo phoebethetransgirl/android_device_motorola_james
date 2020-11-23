@@ -1,5 +1,5 @@
 <!--
-  Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+  Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -40,7 +40,9 @@ Position :
 MountAngle :
 	Angle at which the sensor is mounted. Valid values are 0, 90, 180, 270 and 360.
 	To use default mountangle mentioned in kernel use 360.
-
+SensorSlaveAddress:
+    Sensor slave address. Should add this tag when sensor slave address in sensor
+    is different with defalt slave address in sensor driver.
 CsiInfo : This node contains information about the receiver configuration.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -86,10 +88,12 @@ LensInfo : Information of the lens present in the module.
 <CameraConfigurationRoot>
   <CameraModuleConfig>
     <CameraId>0</CameraId>
-    <SensorName>mot_ov12a10</SensorName>
-    <ActuatorName>dw9767</ActuatorName>
+    <SensorName>mot_hi846</SensorName>
+    <EepromName>mot_hi846</EepromName>
+    <ActuatorName>dw9714p</ActuatorName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>ov12a10_hannah_chromatix</ChromatixName>
+    <ChromatixName>mot_hi846_chromatix</ChromatixName>
+    <AltChromatixName>mot_hi846_byd_chromatix</AltChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -100,59 +104,37 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>3.88</FocalLength>
+      <FocalLength>2.85</FocalLength>
       <FNumber>2.0</FNumber>
-      <TotalFocusDistance>1.2</TotalFocusDistance>
-      <HorizontalViewAngle>66.9</HorizontalViewAngle>
-      <VerticalViewAngle>52.8</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
+      <TotalFocusDistance>3.8</TotalFocusDistance>
+      <HorizontalViewAngle>64.83</HorizontalViewAngle>
+      <VerticalViewAngle>50.86</VerticalViewAngle>
+      <MinFocusDistance>0.08</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
     <CameraId>1</CameraId>
-    <SensorName>s5k4h7</SensorName>
+    <SensorName>mot_hi556</SensorName>
+    <EepromName>mot_hi556</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>mot_s5k4h7_hannah_chromatix</ChromatixName>
+    <ChromatixName>mot_hi556_chromatix</ChromatixName>
+    <AltChromatixName>mot_hi556_byd_chromatix</AltChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>
     <CSIInfo>
       <CSIDCore>1</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
+      <LaneMask>0x07</LaneMask>
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>2.671</FocalLength>
+      <FocalLength>1.97</FocalLength>
       <FNumber>2.2</FNumber>
-      <TotalFocusDistance>1.97</TotalFocusDistance>
-      <HorizontalViewAngle>67.9</HorizontalViewAngle>
-      <VerticalViewAngle>53.5</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-  <CameraModuleConfig>
-  <CameraId>2</CameraId>
-    <SensorName>mot_ov5675</SensorName>
-    <FlashName>pmic</FlashName>
-    <ChromatixName>ov5675_jeterkc_chromatix</ChromatixName>
-    <AltChromatixName>ov5675_jeterht_chromatix</AltChromatixName>
-    <ModesSupported>1</ModesSupported>
-    <Position>FRONT</Position>
-    <MountAngle>270</MountAngle>
-    <CSIInfo>
-      <CSIDCore>1</CSIDCore>
-      <LaneMask>0x7</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>2.4</FocalLength>
-      <FNumber>2.0</FNumber>
-      <TotalFocusDistance>1.97</TotalFocusDistance>
-      <HorizontalViewAngle>62.8</HorizontalViewAngle>
-      <VerticalViewAngle>49.0</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
+      <TotalFocusDistance>2.95</TotalFocusDistance>
+      <HorizontalViewAngle>72.3</HorizontalViewAngle>
+      <VerticalViewAngle>57.6</VerticalViewAngle>
+      <MinFocusDistance>0.34</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
 </CameraConfigurationRoot>
