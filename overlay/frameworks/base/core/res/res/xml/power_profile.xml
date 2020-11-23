@@ -47,13 +47,13 @@
         <value>255.368</value>
         <value>292.237</value>
     </array>
-    <array name="cpu.core_power.cluster1">
+    <array name="cpu.core_power.cluster0">
         <value>145.062</value>
         <value>178.358</value>
         <value>179.853</value>
         <value>182.287</value>
     </array>
-    <item name="cpu.suspend">3.663</item>
-    <item name="cpu.idle">1.719</item>
-    <item name="battery.capacity">5000</item>
+    <item name="cpu.idle">3.663</item>
+    <item name="cpu.awake">1.719</item>
+    <item name="battery.capacity">3000</item>
 </device>
