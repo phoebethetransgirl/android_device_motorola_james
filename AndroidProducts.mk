@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_james.mk
+    $(LOCAL_DIR)/aosp_james.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_james-user \
-    lineage_james-userdebug \
-    lineage_james-eng
+    aosp_james-user \
+    aosp_james-userdebug \
+    aosp_james-eng
