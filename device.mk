@@ -53,7 +53,6 @@ PRODUCT_PACKAGES += \
     init.device.rc
 
 PRODUCT_PACKAGES += \
-    init.mmi.laser.sh \
     init.qcom.sensors.sh
 
 # Releasetools script
