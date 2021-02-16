@@ -9,9 +9,6 @@
 
 DEVICE_PATH := device/motorola/james
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := james,rjames
-
 # Display
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
