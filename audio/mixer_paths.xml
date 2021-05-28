@@ -855,7 +855,7 @@
 
     <path name="handset">
 	<!--TAS2560 Handset case-->
-	<ctl name="DAC Playback Volume" value="15" />
+	<ctl name="DAC Playback Volume" value="0" />
     </path>
 
     <path name="handset-mic">
