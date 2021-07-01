@@ -28,7 +28,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 11490278400
 VENDOR_SECURITY_PATCH := 2020-06-04
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
 -include vendor/motorola/james/BoardConfigVendor.mk
