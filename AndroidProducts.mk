@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_james.mk
+    $(LOCAL_DIR)/kasumi_james.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_james-user \
-    lineage_james-userdebug \
-    lineage_james-eng
+    kasumi_james-user \
+    kasumi_james-userdebug \
+    kasumi_james-eng
